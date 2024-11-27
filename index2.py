@@ -1,7 +1,5 @@
-# Lista para armazenar os funcionários da empresa
 empresa = []
 
-# Função para inserir um funcionário
 def inserir_funcionario():
     print("\n--- Inserir Funcionário ---")
     while True:
@@ -45,7 +43,6 @@ def inserir_funcionario():
     empresa.append(funcionario)
     print(f"Funcionário {nome} inserido com sucesso!")
 
-# Função para exibir as médias salariais
 def exibir_medias_salariais():
     print("\n--- Exibir Médias Salariais ---")
     if not empresa:
@@ -61,7 +58,6 @@ def exibir_medias_salariais():
     print(f"Média Salarial dos Funcionários com Plano de Saúde: R${media_com_plano:.2f}")
     print(f"Média Salarial dos Funcionários sem Plano de Saúde: R${media_sem_plano:.2f}")
 
-# Função principal do menu
 def menu():
     while True:
         print("\n--- Menu ---")
@@ -80,5 +76,4 @@ def menu():
         else:
             print("Opção inválida. Tente novamente.")
 
-# Executar o programa
 menu()
